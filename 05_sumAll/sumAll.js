@@ -1,12 +1,15 @@
 const sumAll = function(a, b) {
-  if (isNaN(a) || isNaN(b)) return "ERROR";
-  if (a < 0 || b < 0) return "ERROR";
-  let min = Math.min(a, b);
-  let max = Math.max(a, b);
-  let sum = 0;
-  for (let i = min;i < max; min++);
-      sum = sum + i;
-  return sum;
+  if (a<0 || b<0 || typeof(b) !== 'number' || typeof(a) !== 'number'){
+    return 'ERROR'
+    }else {
+    if(a<b){
+    a1 = a
+    a2 = b 
+    }else{
+        a1 = b
+        a2 = a
+    }
+    return (a1+a2)*(a2/2)}
 };
 
 // Do not edit below this line
